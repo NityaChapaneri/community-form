@@ -12,66 +12,75 @@ body {
 }
 
 
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
 .navbar-left {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
-}
-
-.navbar-left h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #1f61dd;
 }
 
 .navbar-left img {
-  height: 50px;
+  width: 50px;  /* Adjust as needed */
+  height: auto;
   margin-right: 10px;
-  object-fit: contain;
-}
-
-
-.navbar img[alt="Mataji"] {
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 10px 20px;
-  background-color: #f8f8f8;
-}
-
-.navbar h2 {
-  font-size: 1.5rem;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
 }
 
 .menu-icon {
-  display: none;
-  font-size: 24px;
+  display: none; /* Hidden by default */
   cursor: pointer;
 }
 
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
 }
 
-.navbar ul li a:hover {
-  color: #ffcc80;
+.nav-links li {
+  margin: 0 10px;
 }
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links.open {
+  display: block;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #333;
+  width: 200px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;  /* Show the menu icon on small screens */
+  }
+
+  .nav-links {
+    display: none;  /* Hide menu links on small screens */
+    flex-direction: column;
+  }
+
+  .nav-links.open {
+    display: block;  /* Show the menu when it's toggled */
+  }
+}
+
+
+
 
 /* Login Page */
 .login-container {
@@ -226,35 +235,6 @@ button:hover {
   text-align: center;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
-  .navbar-left {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .logo, .mataji {
-    width: 40px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
 
   .form-container {
     padding: 1.5rem;
@@ -267,7 +247,7 @@ button:hover {
   .form-group textarea {
     max-width: 80%;
   }
-}
+
 
 .form-group input[type="file"] {
   padding: 0.5rem;
