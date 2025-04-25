@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react';  // Make sure this is included
 import { Link } from 'react-router-dom';
-import './App.css'; // Ensure you import the CSS
+import './Navbar.css'; // Ensure you import your CSS
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
