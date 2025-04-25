@@ -10,19 +10,20 @@ const Navbar = () => {
       </div>
       
 <img src="/matajiPic.jpg" alt="Mataji" />
+
+<div className="menu-icon" onClick={toggleMenu}>
+        ☰
+      </div>
        
       
 
       
-      <ul>
+      <ul className={isOpen ? "nav-links open" : "nav-links"}>
         
         <li><Link to="/">Login</Link></li>
         <li><Link to="/main-form">Main Form</Link></li>
         <li> <Link to="/dashboard">Dashboard</Link> </li>
       </ul>
-
-      
-
 
       
     </nav>

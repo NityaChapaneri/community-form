@@ -42,3 +42,8 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+
+
+// git add .//
+//git commit -m "your msg"//
+//git push origin master//
