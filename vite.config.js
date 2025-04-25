@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/community-form/', 
+  base: './', // ✅ use this for Vercel
 });

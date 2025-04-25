@@ -5,11 +5,13 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <img src="/logo.jpg" alt="Logo" className="logo" />
+      <img src="/community-form/logo.jpg" alt="Logo" />
         <h2>Chaar Gaam Darji Samaj</h2>
       </div>
+      
+<img src="/community-form/matajiPic.jpg" alt="Mataji" />
        
-      <img src="/matajiPic.jpg" alt="Mataji" className="mataji-pic" />
+      
 
       
       <ul>

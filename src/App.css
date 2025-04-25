@@ -18,15 +18,21 @@ body {
   gap: 0.8rem;
 }
 
-.logo {
-  height: 40px;
-  width: auto;
+.navbar-left h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1f61dd;
+}
+
+.navbar-left img {
+  height: 50px;
+  margin-right: 10px;
+  object-fit: contain;
 }
 
 
-.mataji-pic {
-  height: 40px;
-  width: 40px;
+.navbar img[alt="Mataji"] {
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
 }
