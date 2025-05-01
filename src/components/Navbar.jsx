@@ -1,6 +1,6 @@
-import React, { useState } from 'react';  // Make sure this is included
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './App.css'; // Ensure you import your CSS
+import '../App.css';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ const Navbar = () => {
         <h2>Chaar Gaam Darji Samaj</h2>
       </div>
 
-      <img src="/matajiPic.jpg" alt="Mataji" />
+      <img className="mataji-img" src="/matajiPic.jpg" alt="Mataji" />
 
       <div className="menu-icon" onClick={toggleMenu}>
         ☰
